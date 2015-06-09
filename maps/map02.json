@@ -1,0 +1,7 @@
+{
+
+"tiles" : [
+	{ "x":8, "y":4, "z": 3, "details" : { "hitbox":"tile", "mat":"grass_dirt" }}
+]
+
+}

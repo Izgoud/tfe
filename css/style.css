@@ -1,0 +1,106 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: 	border-box;
+	-ms-box-sizing: 	border-box;
+	-o-box-sizing: 		border-box;
+	box-sizing: 		border-box;
+}
+
+body {
+	overflow: hidden;
+	font: 16px/1.5 "Roboto", Arial, Helvetica, sans-serif;
+	color: #454545;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1140px;
+	padding: 0 24px;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 24px;
+
+	color: #2196F3;
+	font-size: 24px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 24px;
+	font-size: 36px;
+}
+
+ul {
+	list-style: circle;
+	padding: 12px 0 0 24px;
+}
+
+a { color: #2196F3; }
+a:visited { color: #64B5F6; }
+a:hover { text-decoration: none; }
+a:active { color: #1976D2; }
+
+/********* COLONNES **********/
+
+.row { margin: 0 -12px; }
+.col2 { float: left; padding: 12px 12px; width: 50%; }
+.col3 { float: left; padding: 12px 12px; width: 33.33333%; }
+.col4 { float: left; padding: 12px 12px; width: 25%; }
+.col5 { float: left; padding: 12px 12px; width: 20%; }
+
+/********* MARGINS **********/
+
+.ml8 	{ margin-left: 8px }
+.ml12 	{ margin-left: 12px }
+.ml24 	{ margin-left: 24px }
+.ml32 	{ margin-left: 32px }
+.ml48 	{ margin-left: 48px }
+
+.mr8 	{ margin-right: 8px }
+.mr12 	{ margin-right: 12px }
+.mr24 	{ margin-right: 24px }
+.mr32 	{ margin-right: 32px }
+.mr48 	{ margin-right: 48px }
+
+.mt8 	{ margin-top: 8px }
+.mt12 	{ margin-top: 12px }
+.mt24 	{ margin-top: 24px }
+.mt32 	{ margin-top: 32px }
+.mt48 	{ margin-top: 48px }
+
+.mb8 	{ margin-bottom: 8px }
+.mb12 	{ margin-bottom: 12px }
+.mb24 	{ margin-bottom: 24px }
+.mb32 	{ margin-bottom: 32px }
+.mb48 	{ margin-bottom: 48px }
+
+/********* DIVERS **********/
+
+img { display: block; }
+svg { display: block; fill: rgba(255,255,255,.85); }
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.txt-center { text-align: center; }
+
+.clearfix:after, .row:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+html[xmlns] .clearfix, html[xmlns] .row {
+	display: block;
+}
+ 
+* html .clearfix, * html .row {
+	height: 1%;
+}

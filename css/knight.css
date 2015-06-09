@@ -1,0 +1,709 @@
+.knight {
+	width: 121px;
+	height: 103px;
+	margin-left: -30px;
+	margin-top: -50px;
+}
+
+.knight.red { background-image: url('../img/knight_red_sprites.png'); }
+.knight.blue { background-image: url('../img/knight_blue_sprites.png'); }
+
+	/* ANIMS */
+
+.knight[data-anim="attack"][data-view="0"] {
+	-webkit-animation: 	knight_attack_view00 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view00 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view00 1s infinite steps(6);
+	-o-animation: 		knight_attack_view00 1s infinite steps(6);
+	animation: 			knight_attack_view00 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="0"] 	{
+	-webkit-animation: 	knight_death_view00 1s both steps(5);
+	-moz-animation: 	knight_death_view00 1s both steps(5);
+	-ms-animation: 		knight_death_view00 1s both steps(5);
+	-o-animation: 		knight_death_view00 1s both steps(5);
+	animation: 			knight_death_view00 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="0"] 	{
+	-webkit-animation: 	knight_idle_view00 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view00 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view00 2s infinite steps(6);
+	-o-animation: 		knight_idle_view00 2s infinite steps(6);
+	animation: 			knight_idle_view00 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="0"] 	{
+	-webkit-animation: 	knight_run_view00 1s infinite steps(6);
+	-moz-animation: 	knight_run_view00 1s infinite steps(6);
+	-ms-animation: 		knight_run_view00 1s infinite steps(6);
+	-o-animation: 		knight_run_view00 1s infinite steps(6);
+	animation: 			knight_run_view00 1s infinite steps(6);
+}
+
+
+.knight[data-anim="attack"][data-view="1"] {
+	-webkit-animation: 	knight_attack_view01 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view01 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view01 1s infinite steps(6);
+	-o-animation: 		knight_attack_view01 1s infinite steps(6);
+	animation: 			knight_attack_view01 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="1"] 	{
+	-webkit-animation: 	knight_death_view01 1s both steps(5);
+	-moz-animation: 	knight_death_view01 1s both steps(5);
+	-ms-animation: 		knight_death_view01 1s both steps(5);
+	-o-animation: 		knight_death_view01 1s both steps(5);
+	animation: 			knight_death_view01 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="1"] 	{
+	-webkit-animation: 	knight_idle_view01 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view01 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view01 2s infinite steps(6);
+	-o-animation: 		knight_idle_view01 2s infinite steps(6);
+	animation: 			knight_idle_view01 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="1"] 	{
+	-webkit-animation: 	knight_run_view01 1s infinite steps(6);
+	-moz-animation: 	knight_run_view01 1s infinite steps(6);
+	-ms-animation: 		knight_run_view01 1s infinite steps(6);
+	-o-animation: 		knight_run_view01 1s infinite steps(6);
+	animation: 			knight_run_view01 1s infinite steps(6);
+}
+
+
+.knight[data-anim="attack"][data-view="2"] {
+	-webkit-animation: 	knight_attack_view02 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view02 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view02 1s infinite steps(6);
+	-o-animation: 		knight_attack_view02 1s infinite steps(6);
+	animation: 			knight_attack_view02 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="2"] 	{
+	-webkit-animation: 	knight_death_view02 1s both steps(5);
+	-moz-animation: 	knight_death_view02 1s both steps(5);
+	-ms-animation: 		knight_death_view02 1s both steps(5);
+	-o-animation: 		knight_death_view02 1s both steps(5);
+	animation: 			knight_death_view02 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="2"] 	{
+	-webkit-animation: 	knight_idle_view02 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view02 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view02 2s infinite steps(6);
+	-o-animation: 		knight_idle_view02 2s infinite steps(6);
+	animation: 			knight_idle_view02 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="2"] 	{
+	-webkit-animation: 	knight_run_view02 1s infinite steps(6);
+	-moz-animation: 	knight_run_view02 1s infinite steps(6);
+	-ms-animation: 		knight_run_view02 1s infinite steps(6);
+	-o-animation: 		knight_run_view02 1s infinite steps(6);
+	animation: 			knight_run_view02 1s infinite steps(6);
+}
+
+
+.knight[data-anim="attack"][data-view="3"] {
+	-webkit-animation: 	knight_attack_view03 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view03 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view03 1s infinite steps(6);
+	-o-animation: 		knight_attack_view03 1s infinite steps(6);
+	animation: 			knight_attack_view03 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="3"] 	{
+	-webkit-animation: 	knight_death_view03 1s both steps(5);
+	-moz-animation: 	knight_death_view03 1s both steps(5);
+	-ms-animation: 		knight_death_view03 1s both steps(5);
+	-o-animation: 		knight_death_view03 1s both steps(5);
+	animation: 			knight_death_view03 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="3"] 	{
+	-webkit-animation: 	knight_idle_view03 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view03 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view03 2s infinite steps(6);
+	-o-animation: 		knight_idle_view03 2s infinite steps(6);
+	animation: 			knight_idle_view03 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="3"] 	{
+	-webkit-animation: 	knight_run_view03 1s infinite steps(6);
+	-moz-animation: 	knight_run_view03 1s infinite steps(6);
+	-ms-animation: 		knight_run_view03 1s infinite steps(6);
+	-o-animation: 		knight_run_view03 1s infinite steps(6);
+	animation: 			knight_run_view03 1s infinite steps(6);
+}
+
+
+.knight[data-anim="attack"][data-view="4"] {
+	-webkit-animation: 	knight_attack_view04 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view04 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view04 1s infinite steps(6);
+	-o-animation: 		knight_attack_view04 1s infinite steps(6);
+	animation: 			knight_attack_view04 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="4"] 	{
+	-webkit-animation: 	knight_death_view04 1s both steps(5);
+	-moz-animation: 	knight_death_view04 1s both steps(5);
+	-ms-animation: 		knight_death_view04 1s both steps(5);
+	-o-animation: 		knight_death_view04 1s both steps(5);
+	animation: 			knight_death_view04 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="4"] 	{
+	-webkit-animation: 	knight_idle_view04 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view04 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view04 2s infinite steps(6);
+	-o-animation: 		knight_idle_view04 2s infinite steps(6);
+	animation: 			knight_idle_view04 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="4"] 	{
+	-webkit-animation: 	knight_run_view04 1s infinite steps(6);
+	-moz-animation: 	knight_run_view04 1s infinite steps(6);
+	-ms-animation: 		knight_run_view04 1s infinite steps(6);
+	-o-animation: 		knight_run_view04 1s infinite steps(6);
+	animation: 			knight_run_view04 1s infinite steps(6);
+}
+
+
+.knight[data-anim="attack"][data-view="5"] {
+	-webkit-animation: 	knight_attack_view05 1s infinite steps(6);
+	-moz-animation: 	knight_attack_view05 1s infinite steps(6);
+	-ms-animation: 		knight_attack_view05 1s infinite steps(6);
+	-o-animation: 		knight_attack_view05 1s infinite steps(6);
+	animation: 			knight_attack_view05 1s infinite steps(6);
+}
+.knight[data-anim="death"][data-view="5"] 	{
+	-webkit-animation: 	knight_death_view05 1s both steps(5);
+	-moz-animation: 	knight_death_view05 1s both steps(5);
+	-ms-animation: 		knight_death_view05 1s both steps(5);
+	-o-animation: 		knight_death_view05 1s both steps(5);
+	animation: 			knight_death_view05 1s both steps(5);
+}
+.knight[data-anim="idle"][data-view="5"] 	{
+	-webkit-animation: 	knight_idle_view05 2s infinite steps(6);
+	-moz-animation: 	knight_idle_view05 2s infinite steps(6);
+	-ms-animation: 		knight_idle_view05 2s infinite steps(6);
+	-o-animation: 		knight_idle_view05 2s infinite steps(6);
+	animation: 			knight_idle_view05 2s infinite steps(6);
+}
+.knight[data-anim="run"][data-view="5"] 	{
+	-webkit-animation: 	knight_run_view05 1s infinite steps(6);
+	-moz-animation: 	knight_run_view05 1s infinite steps(6);
+	-ms-animation: 		knight_run_view05 1s infinite steps(6);
+	-o-animation: 		knight_run_view05 1s infinite steps(6);
+	animation: 			knight_run_view05 1s infinite steps(6);
+}
+
+
+@-webkit-keyframes knight_attack_view00 {
+	0% { background-position: 0px 0px; }
+	100% { background-position: -726px 0px; }
+}
+@-webkit-keyframes knight_death_view00 {
+	0% { background-position: -726px 0px; }
+	100% { background-position: -1331px 0px; }
+}
+@-webkit-keyframes knight_idle_view00 {
+	0% { background-position: -1452px 0px; }
+	100% { background-position: -2178px 0px; }
+}
+@-webkit-keyframes knight_run_view00 {
+	0% { background-position: -2178px 0px; }
+	100% { background-position: -2904px 0px; }
+}
+
+@-webkit-keyframes knight_attack_view01 {
+	0% { background-position: 0px -103px; }
+	100% { background-position: -726px -103px; }
+}
+@-webkit-keyframes knight_death_view01 {
+	0% { background-position: -726px -103px; }
+	100% { background-position: -1331px -103px; }
+}
+@-webkit-keyframes knight_idle_view01 {
+	0% { background-position: -1452px -103px; }
+	100% { background-position: -2178px -103px; }
+}
+@-webkit-keyframes knight_run_view01 {
+	0% { background-position: -2178px -103px; }
+	100% { background-position: -2904px -103px; }
+}
+
+@-webkit-keyframes knight_attack_view02 {
+	0% { background-position: 0px -206px; }
+	100% { background-position: -726px -206px; }
+}
+@-webkit-keyframes knight_death_view02 {
+	0% { background-position: -726px -206px; }
+	100% { background-position: -1331px -206px; }
+}
+@-webkit-keyframes knight_idle_view02 {
+	0% { background-position: -1452px -206px; }
+	100% { background-position: -2178px -206px; }
+}
+@-webkit-keyframes knight_run_view02 {
+	0% { background-position: -2178px -206px; }
+	100% { background-position: -2904px -206px; }
+}
+
+@-webkit-keyframes knight_attack_view03 {
+	0% { background-position: 0px -309px; }
+	100% { background-position: -726px -309px; }
+}
+@-webkit-keyframes knight_death_view03 {
+	0% { background-position: -726px -309px; }
+	100% { background-position: -1331px -309px; }
+}
+@-webkit-keyframes knight_idle_view03 {
+	0% { background-position: -1452px -309px; }
+	100% { background-position: -2178px -309px; }
+}
+@-webkit-keyframes knight_run_view03 {
+	0% { background-position: -2178px -309px; }
+	100% { background-position: -2904px -309px; }
+}
+
+@-webkit-keyframes knight_attack_view04 {
+	0% { background-position: 0px -412px; }
+	100% { background-position: -726px -412px; }
+}
+@-webkit-keyframes knight_death_view04 {
+	0% { background-position: -726px -412px; }
+	100% { background-position: -1331px -412px; }
+}
+@-webkit-keyframes knight_idle_view04 {
+	0% { background-position: -1452px -412px; }
+	100% { background-position: -2178px -412px; }
+}
+@-webkit-keyframes knight_run_view04 {
+	0% { background-position: -2178px -412px; }
+	100% { background-position: -2904px -412px; }
+}
+
+@-webkit-keyframes knight_attack_view05 {
+	0% { background-position: 0px -515px; }
+	100% { background-position: -726px -515px; }
+}
+@-webkit-keyframes knight_death_view05 {
+	0% { background-position: -726px -515px; }
+	100% { background-position: -1331px -515px; }
+}
+@-webkit-keyframes knight_idle_view05 {
+	0% { background-position: -1452px -515px; }
+	100% { background-position: -2178px -515px; }
+}
+@-webkit-keyframes knight_run_view05 {
+	0% { background-position: -2178px -515px; }
+	100% { background-position: -2904px -515px; }
+}
+
+
+
+@-moz-keyframes knight_attack_view00 {
+	0% { background-position: 0px 0px; }
+	100% { background-position: -726px 0px; }
+}
+@-moz-keyframes knight_death_view00 {
+	0% { background-position: -726px 0px; }
+	100% { background-position: -1331px 0px; }
+}
+@-moz-keyframes knight_idle_view00 {
+	0% { background-position: -1452px 0px; }
+	100% { background-position: -2178px 0px; }
+}
+@-moz-keyframes knight_run_view00 {
+	0% { background-position: -2178px 0px; }
+	100% { background-position: -2904px 0px; }
+}
+
+@-moz-keyframes knight_attack_view01 {
+	0% { background-position: 0px -103px; }
+	100% { background-position: -726px -103px; }
+}
+@-moz-keyframes knight_death_view01 {
+	0% { background-position: -726px -103px; }
+	100% { background-position: -1331px -103px; }
+}
+@-moz-keyframes knight_idle_view01 {
+	0% { background-position: -1452px -103px; }
+	100% { background-position: -2178px -103px; }
+}
+@-moz-keyframes knight_run_view01 {
+	0% { background-position: -2178px -103px; }
+	100% { background-position: -2904px -103px; }
+}
+
+@-moz-keyframes knight_attack_view02 {
+	0% { background-position: 0px -206px; }
+	100% { background-position: -726px -206px; }
+}
+@-moz-keyframes knight_death_view02 {
+	0% { background-position: -726px -206px; }
+	100% { background-position: -1331px -206px; }
+}
+@-moz-keyframes knight_idle_view02 {
+	0% { background-position: -1452px -206px; }
+	100% { background-position: -2178px -206px; }
+}
+@-moz-keyframes knight_run_view02 {
+	0% { background-position: -2178px -206px; }
+	100% { background-position: -2904px -206px; }
+}
+
+@-moz-keyframes knight_attack_view03 {
+	0% { background-position: 0px -309px; }
+	100% { background-position: -726px -309px; }
+}
+@-moz-keyframes knight_death_view03 {
+	0% { background-position: -726px -309px; }
+	100% { background-position: -1331px -309px; }
+}
+@-moz-keyframes knight_idle_view03 {
+	0% { background-position: -1452px -309px; }
+	100% { background-position: -2178px -309px; }
+}
+@-moz-keyframes knight_run_view03 {
+	0% { background-position: -2178px -309px; }
+	100% { background-position: -2904px -309px; }
+}
+
+@-moz-keyframes knight_attack_view04 {
+	0% { background-position: 0px -412px; }
+	100% { background-position: -726px -412px; }
+}
+@-moz-keyframes knight_death_view04 {
+	0% { background-position: -726px -412px; }
+	100% { background-position: -1331px -412px; }
+}
+@-moz-keyframes knight_idle_view04 {
+	0% { background-position: -1452px -412px; }
+	100% { background-position: -2178px -412px; }
+}
+@-moz-keyframes knight_run_view04 {
+	0% { background-position: -2178px -412px; }
+	100% { background-position: -2904px -412px; }
+}
+
+@-moz-keyframes knight_attack_view05 {
+	0% { background-position: 0px -515px; }
+	100% { background-position: -726px -515px; }
+}
+@-moz-keyframes knight_death_view05 {
+	0% { background-position: -726px -515px; }
+	100% { background-position: -1331px -515px; }
+}
+@-moz-keyframes knight_idle_view05 {
+	0% { background-position: -1452px -515px; }
+	100% { background-position: -2178px -515px; }
+}
+@-moz-keyframes knight_run_view05 {
+	0% { background-position: -2178px -515px; }
+	100% { background-position: -2904px -515px; }
+}
+
+
+
+@-ms-keyframes knight_attack_view00 {
+	0% { background-position: 0px 0px; }
+	100% { background-position: -726px 0px; }
+}
+@-ms-keyframes knight_death_view00 {
+	0% { background-position: -726px 0px; }
+	100% { background-position: -1331px 0px; }
+}
+@-ms-keyframes knight_idle_view00 {
+	0% { background-position: -1452px 0px; }
+	100% { background-position: -2178px 0px; }
+}
+@-ms-keyframes knight_run_view00 {
+	0% { background-position: -2178px 0px; }
+	100% { background-position: -2904px 0px; }
+}
+
+@-ms-keyframes knight_attack_view01 {
+	0% { background-position: 0px -103px; }
+	100% { background-position: -726px -103px; }
+}
+@-ms-keyframes knight_death_view01 {
+	0% { background-position: -726px -103px; }
+	100% { background-position: -1331px -103px; }
+}
+@-ms-keyframes knight_idle_view01 {
+	0% { background-position: -1452px -103px; }
+	100% { background-position: -2178px -103px; }
+}
+@-ms-keyframes knight_run_view01 {
+	0% { background-position: -2178px -103px; }
+	100% { background-position: -2904px -103px; }
+}
+
+@-ms-keyframes knight_attack_view02 {
+	0% { background-position: 0px -206px; }
+	100% { background-position: -726px -206px; }
+}
+@-ms-keyframes knight_death_view02 {
+	0% { background-position: -726px -206px; }
+	100% { background-position: -1331px -206px; }
+}
+@-ms-keyframes knight_idle_view02 {
+	0% { background-position: -1452px -206px; }
+	100% { background-position: -2178px -206px; }
+}
+@-ms-keyframes knight_run_view02 {
+	0% { background-position: -2178px -206px; }
+	100% { background-position: -2904px -206px; }
+}
+
+@-ms-keyframes knight_attack_view03 {
+	0% { background-position: 0px -309px; }
+	100% { background-position: -726px -309px; }
+}
+@-ms-keyframes knight_death_view03 {
+	0% { background-position: -726px -309px; }
+	100% { background-position: -1331px -309px; }
+}
+@-ms-keyframes knight_idle_view03 {
+	0% { background-position: -1452px -309px; }
+	100% { background-position: -2178px -309px; }
+}
+@-ms-keyframes knight_run_view03 {
+	0% { background-position: -2178px -309px; }
+	100% { background-position: -2904px -309px; }
+}
+
+@-ms-keyframes knight_attack_view04 {
+	0% { background-position: 0px -412px; }
+	100% { background-position: -726px -412px; }
+}
+@-ms-keyframes knight_death_view04 {
+	0% { background-position: -726px -412px; }
+	100% { background-position: -1331px -412px; }
+}
+@-ms-keyframes knight_idle_view04 {
+	0% { background-position: -1452px -412px; }
+	100% { background-position: -2178px -412px; }
+}
+@-ms-keyframes knight_run_view04 {
+	0% { background-position: -2178px -412px; }
+	100% { background-position: -2904px -412px; }
+}
+
+@-ms-keyframes knight_attack_view05 {
+	0% { background-position: 0px -515px; }
+	100% { background-position: -726px -515px; }
+}
+@-ms-keyframes knight_death_view05 {
+	0% { background-position: -726px -515px; }
+	100% { background-position: -1331px -515px; }
+}
+@-ms-keyframes knight_idle_view05 {
+	0% { background-position: -1452px -515px; }
+	100% { background-position: -2178px -515px; }
+}
+@-ms-keyframes knight_run_view05 {
+	0% { background-position: -2178px -515px; }
+	100% { background-position: -2904px -515px; }
+}
+
+
+
+@-o-keyframes knight_attack_view00 {
+	0% { background-position: 0px 0px; }
+	100% { background-position: -726px 0px; }
+}
+@-o-keyframes knight_death_view00 {
+	0% { background-position: -726px 0px; }
+	100% { background-position: -1331px 0px; }
+}
+@-o-keyframes knight_idle_view00 {
+	0% { background-position: -1452px 0px; }
+	100% { background-position: -2178px 0px; }
+}
+@-o-keyframes knight_run_view00 {
+	0% { background-position: -2178px 0px; }
+	100% { background-position: -2904px 0px; }
+}
+
+@-o-keyframes knight_attack_view01 {
+	0% { background-position: 0px -103px; }
+	100% { background-position: -726px -103px; }
+}
+@-o-keyframes knight_death_view01 {
+	0% { background-position: -726px -103px; }
+	100% { background-position: -1331px -103px; }
+}
+@-o-keyframes knight_idle_view01 {
+	0% { background-position: -1452px -103px; }
+	100% { background-position: -2178px -103px; }
+}
+@-o-keyframes knight_run_view01 {
+	0% { background-position: -2178px -103px; }
+	100% { background-position: -2904px -103px; }
+}
+
+@-o-keyframes knight_attack_view02 {
+	0% { background-position: 0px -206px; }
+	100% { background-position: -726px -206px; }
+}
+@-o-keyframes knight_death_view02 {
+	0% { background-position: -726px -206px; }
+	100% { background-position: -1331px -206px; }
+}
+@-o-keyframes knight_idle_view02 {
+	0% { background-position: -1452px -206px; }
+	100% { background-position: -2178px -206px; }
+}
+@-o-keyframes knight_run_view02 {
+	0% { background-position: -2178px -206px; }
+	100% { background-position: -2904px -206px; }
+}
+
+@-o-keyframes knight_attack_view03 {
+	0% { background-position: 0px -309px; }
+	100% { background-position: -726px -309px; }
+}
+@-o-keyframes knight_death_view03 {
+	0% { background-position: -726px -309px; }
+	100% { background-position: -1331px -309px; }
+}
+@-o-keyframes knight_idle_view03 {
+	0% { background-position: -1452px -309px; }
+	100% { background-position: -2178px -309px; }
+}
+@-o-keyframes knight_run_view03 {
+	0% { background-position: -2178px -309px; }
+	100% { background-position: -2904px -309px; }
+}
+
+@-o-keyframes knight_attack_view04 {
+	0% { background-position: 0px -412px; }
+	100% { background-position: -726px -412px; }
+}
+@-o-keyframes knight_death_view04 {
+	0% { background-position: -726px -412px; }
+	100% { background-position: -1331px -412px; }
+}
+@-o-keyframes knight_idle_view04 {
+	0% { background-position: -1452px -412px; }
+	100% { background-position: -2178px -412px; }
+}
+@-o-keyframes knight_run_view04 {
+	0% { background-position: -2178px -412px; }
+	100% { background-position: -2904px -412px; }
+}
+
+@-o-keyframes knight_attack_view05 {
+	0% { background-position: 0px -515px; }
+	100% { background-position: -726px -515px; }
+}
+@-o-keyframes knight_death_view05 {
+	0% { background-position: -726px -515px; }
+	100% { background-position: -1331px -515px; }
+}
+@-o-keyframes knight_idle_view05 {
+	0% { background-position: -1452px -515px; }
+	100% { background-position: -2178px -515px; }
+}
+@-o-keyframes knight_run_view05 {
+	0% { background-position: -2178px -515px; }
+	100% { background-position: -2904px -515px; }
+}
+
+
+
+@keyframes knight_attack_view00 {
+	0% { background-position: 0px 0px; }
+	100% { background-position: -726px 0px; }
+}
+@keyframes knight_death_view00 {
+	0% { background-position: -726px 0px; }
+	100% { background-position: -1331px 0px; }
+}
+@keyframes knight_idle_view00 {
+	0% { background-position: -1452px 0px; }
+	100% { background-position: -2178px 0px; }
+}
+@keyframes knight_run_view00 {
+	0% { background-position: -2178px 0px; }
+	100% { background-position: -2904px 0px; }
+}
+
+@keyframes knight_attack_view01 {
+	0% { background-position: 0px -103px; }
+	100% { background-position: -726px -103px; }
+}
+@keyframes knight_death_view01 {
+	0% { background-position: -726px -103px; }
+	100% { background-position: -1331px -103px; }
+}
+@keyframes knight_idle_view01 {
+	0% { background-position: -1452px -103px; }
+	100% { background-position: -2178px -103px; }
+}
+@keyframes knight_run_view01 {
+	0% { background-position: -2178px -103px; }
+	100% { background-position: -2904px -103px; }
+}
+
+@keyframes knight_attack_view02 {
+	0% { background-position: 0px -206px; }
+	100% { background-position: -726px -206px; }
+}
+@keyframes knight_death_view02 {
+	0% { background-position: -726px -206px; }
+	100% { background-position: -1331px -206px; }
+}
+@keyframes knight_idle_view02 {
+	0% { background-position: -1452px -206px; }
+	100% { background-position: -2178px -206px; }
+}
+@keyframes knight_run_view02 {
+	0% { background-position: -2178px -206px; }
+	100% { background-position: -2904px -206px; }
+}
+
+@keyframes knight_attack_view03 {
+	0% { background-position: 0px -309px; }
+	100% { background-position: -726px -309px; }
+}
+@keyframes knight_death_view03 {
+	0% { background-position: -726px -309px; }
+	100% { background-position: -1331px -309px; }
+}
+@keyframes knight_idle_view03 {
+	0% { background-position: -1452px -309px; }
+	100% { background-position: -2178px -309px; }
+}
+@keyframes knight_run_view03 {
+	0% { background-position: -2178px -309px; }
+	100% { background-position: -2904px -309px; }
+}
+
+@keyframes knight_attack_view04 {
+	0% { background-position: 0px -412px; }
+	100% { background-position: -726px -412px; }
+}
+@keyframes knight_death_view04 {
+	0% { background-position: -726px -412px; }
+	100% { background-position: -1331px -412px; }
+}
+@keyframes knight_idle_view04 {
+	0% { background-position: -1452px -412px; }
+	100% { background-position: -2178px -412px; }
+}
+@keyframes knight_run_view04 {
+	0% { background-position: -2178px -412px; }
+	100% { background-position: -2904px -412px; }
+}
+
+@keyframes knight_attack_view05 {
+	0% { background-position: 0px -515px; }
+	100% { background-position: -726px -515px; }
+}
+@keyframes knight_death_view05 {
+	0% { background-position: -726px -515px; }
+	100% { background-position: -1331px -515px; }
+}
+@keyframes knight_idle_view05 {
+	0% { background-position: -1452px -515px; }
+	100% { background-position: -2178px -515px; }
+}
+@keyframes knight_run_view05 {
+	0% { background-position: -2178px -515px; }
+	100% { background-position: -2904px -515px; }
+}

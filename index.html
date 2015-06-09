@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Hex Kingdom</title>
+	<meta charset="UTF-8">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/mCustomScrollbar.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/game.css"/>
+</head>
+<body id="body">
+<div id="intro">
+	<h1 class="logo"><a href="index.html" class="intro_skip">Hex Kingdom</a></h1>
+	<div class="intro_slide" id="intro_slide_01">
+		<div class="container">
+			<p>C’est l’histoire de deux frères devenus rois à la mort de leur père. Chacun gouverne un royaume paisible et prospère. Leur peuple les adore, car ils sont justes et bons.<br><br>On pourrait cependant qualifier le plus jeune ... d'imbécile. Et l'amour de son peuple, si grand soit-il, ne l'en rend pas plus fûté pour autant.</p>
+		</div>
+	</div>
+	<div class="intro_slide" id="intro_slide_02">
+		<div class="container">
+			<p class="dark">Un jour, il vide ses caisses pour faire venir dans sa chambre un cirque itinérant.<br>Et comme à chaque fois, c'est son frère qui paye les pots cassés, et l'aide à renflouer ses caisses. Mais cette fois, c'en est trop.</p>
+		</div>
+	</div>
+	<div class="intro_slide" id="intro_slide_03">
+		<div class="container">
+			<p>L’aîné rassemble son armée pour attaquer le château de son frère. Il dirigera son royaume à sa place pour le bien de son peuple.</p>
+			<p class="txt-center">La bataille peut commencer.</p>
+		</div>
+	</div>
+	<div id="intro_options">
+		<button class="button disabled" id="intro_prev">Précédent</button>
+		<button class="button" id="intro_next">Next</button>
+		<a href="#" class="right intro_skip" id="intro_skip">Passer l'intro</a>
+	</div>
+</div>
+<div id="menu">
+	<div class="table">
+		<div class="tablecell">
+			<div id="menu_content" class="container clearfix">
+				<h1 class="left logo"><a href="index.html">Hex Kingdom</a></h1>
+				<button class="button right" id="toIntro">Revoir l'intro</button>
+				<form action="#" id="mapForm" class="clear">
+					<h2>Choisissez une carte.</h2>
+					<img src="img/map01.jpg" alt="Map 1" id="mapIMG" class="right" width="372" height="300">
+					<input type="radio" name="map" value="map01" id="map01" checked="checked" class="formMap">
+					<label for="map01" class="mt8">La Plate Île</label>
+					<input type="radio" name="map" value="map03" id="map03" class="formMap">
+					<label for="map03">La Vallée Aride</label>
+				</form>
+				<a href="credits.html" id="credits" class="left">Crédits</a>
+				<button class="button right" id="play">Jouer</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="viewport">
+	<section id="sidebar">
+		<div id="sidebar_content">
+			<div id="sidebar_default" class="sidebarDiv">
+				<h2 class="player"><small>Vous êtes le joueur</small> <span class="playerColor">rouge</span></h2>
+				<p>C’est à vous de jouer, sélectionnez votre caserne ou une unité.</p>
+			</div>
+			<div id="sidebar_unit" class="sidebarDiv">
+				<h2 class="playerColor">Chevalier</h2>
+				<p id="hp" class="unitStats mb8">100</p>
+				<p id="damage" class="unitStats mb8">15</p>
+				<p id="movesLeft" class="unitStats mb24">0</p>
+				<p>Cliquez sur une case voisine pour y déplacer votre unité. Si une unité adverse s’y trouve, vous devez l’attaquer avant de vous y rendre.</p>
+			</div>
+			<div id="sidebar_barrack" class="sidebarDiv">
+				<h2 class="playerColor">Caserne</h2>
+				<p>Ici vous pouvez créer vos unités.</p>
+				<ul id="spawnUnits">
+					<li id="createKnight" class="barrack_unit">
+						<div class="barrack_unit_profile"></div>
+						<h4>Chevalier</h4>
+						<p class="po">5</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="poFeed"></div>
+		<p id="po">8</p>
+		<p id="pop"><span id="pop_current">0</span>/<span id="pop_max">5</span></p>
+		<button id="endTurn">Finir le tour</button>
+	</section>
+	<section id="game">
+		<div id="scrollHack">
+			<div id="terrain"></div>
+		</div>
+		<div id="overlay">
+			<div id="won">
+				<h3>Victoire</h3>
+				<div class="overlayContent clearfix">
+					<p>Le joueur <span class="playerColor">Rouge</span> a pris le contrôle de la tour adverse.</p>
+
+					<a href="#" id="replay" class="button left">Rejouer</a>
+					<a href="#" class="right toMenu">Quitter</a>
+				</div>
+			</div>
+			<div id="game_menu">
+				<h3>Hex Kingdom</h3>
+				<div class="overlayContent clearfix">
+					<p>Jeu en pause.</p>
+					<a href="#" id="continue" class="button left">Continuer</a>
+					<a href="#" class="right toMenu">Quitter</a>
+				</div>
+			</div>
+		</div>
+		<div class="options">
+			<div id="pause"></div>
+		</div>
+	</section>
+	<section id="timer">
+		<div id="timerBar"></div>
+		<p id="timerText"><span>30</span>s</p>
+	</section>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="lib/velocity.min.js"></script>
+<script src="lib/mCustomScrollbar.js"></script>
+<script src="lib/app.js"></script>
+</body>
+</html>
